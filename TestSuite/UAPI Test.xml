@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="UAPI Test">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0114_TC_0118_VerifyWhetherUAPIAdminApplicationAllowsUserToClickOnAddPackageButtonOnTheServiceBundlesScreen"/>
+      <class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_081_TC_085_VerifyWhetherUAPIAdminApplicationSaveTheRecordAndRedirectsToAnnualSubscriptionTierScreenWhenUserClicksOnSaveButtonIfDataIsValidUAPIAdminApplicationShouldDisplayTheNewlyCreatedPackageUnderAnnualSubscriptionTierScreen"/>
+      <class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_075_VerifyWhetherUAPIAdminApplicationAllowsUserToClickOnCancelButtonOnEditPackageScreenOnClickTheChangesShouldBeDiscardedAndUserShouldBeRedirectedToAnnualSubscriptionTierScreen"/>
+      <class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0117_VerifyWhetherUAPIAdminApplicationClosesTheScreenAndRedirectsToServiceBundlesScreenWhenUserClicksOnCancelButton"/>
+      <class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0297_VerifyWhetherUAPIAdminApplicationOpensAPackageDetailsPopupWhenUserClicksOnViewOptionUnderActionMenuAndDisplaysDetails"/>
+      <class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0274_VerifyWhetherUAPIAdminApplicationFiltersTheResultDataBasedOnTheValueSelectedInSearchByMonthAndSearchByYearFilterUnderConsumptionDetailsScreen"/>
+      <class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0275_VerifyWhetherUAPIAdminApplicationDisplaysMessageAsNoRowsWhenSystemDoesNotFindAnyDataSuitableToTheSelectedFilterCriteriaUnderConsumptionDetailsScreen"/>
+      <class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0298_VerifyUAPIAdminApplicationNavigateTheUserBackToClientSubscriptionPageWhenClickOnBackButton"/>
+      <class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_083_VerifyWhetherUAPIAdminApplicationDisplaysCancelAndSaveButtonOnAddPackageScreen"/>
+      <class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0300_VerifyWhetherUAPIAdminApplicationFiltersTheClientSubscriptionDataBasedOnTheSearchInputEnteredInSearchClientNameAndDisplaysTheResults"/>
+      <class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_084_VerifyWhetherUAPIAdminApplicationClosesTheScreenAndRedirectsToAnnualSubscriptionTierScreenWhenUserClicksOnCancelButton"/>
+      <class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0303_VerifyWhetherUAPIAdminApplicationFiltersTheClientSubscriptionDataBasedOnTheSearchInputEnteredInSearchPackageNameAndDisplaysTheResults"/>
+      <class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0311_VerifyUAPIAdminApplicationRetrieveNewAdminUserDetailsFromAccountManagementScreenAndDisplaysUnderUserManagementPage"/>
+      <class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0335_VerifyWhetherOnClickOfSaveButtonUAPIAdminApplicationValidatesAllTheDataUnderEditUserScreenAndIfThereIsAnyErrorThenApplicationShouldDisplaysAnErrorMessage"/>
+      <class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0304_VerifyWhetherUAPIAdminApplicationDisplaysMessageAsNoRowsWhenSystemDoesNotFindAnyDataSuitableToTheEnteredKeywordInSearchPackageNameSearchOption"/>
+      <class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0340_VerifyWhetherUAPIAdminApplicationDoesNotAllowToDeleteUserIfTheSelectedUserIsTheOnlyUserForTheAccount"/>
+      <class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0312_TC_0314_VerifyWhetherUAPIAdminApplicationAllowsUserToSearchUserDetailsWithBelowSearchCriteriaSSearchWithFirstNameLastNameAndEmailID"/>
+      <class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0341_TC_0343_VerifyWhetherUAPIAdminApplicationAllowsUserToClickOnCreateUserButtonOnTheUsersScreen"/>
+      <class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0301_VerifyWhetherUAPIAdminApplicationDisplaysMessageAsNoRowsWhenSystemDoesNotFindAnyDataSuitableToTheEnteredKeywordInSearchClientNameSearchOption"/>
+      <class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0345_VerifyWhetherUAPIAdminApplicationDisplaysAnErrorMessageIfTheEnteredDataIsIncorrectOrLeftBlankInMandatoryFieldsInCreateUserScreen"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- UAPI Test -->

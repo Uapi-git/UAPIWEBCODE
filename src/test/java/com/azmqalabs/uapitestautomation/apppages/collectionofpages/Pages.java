@@ -1,0 +1,47 @@
+package com.azmqalabs.uapitestautomation.apppages.collectionofpages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+import com.aventstack.extentreports.ExtentTest;
+import com.azmqalabs.uapitestautomation.apppages.allapplicationpages.*;
+import com.azmqalabs.uapitestautomation.common.DBConnect;
+import com.azmqalabs.uapitestautomation.common.uielement.fieldDecorator;
+
+public class Pages {
+
+    private WebDriver driver;
+    private ExtentTest test;
+    public AdminLoginPage adminLoginPage;
+    public PackageManagementPage packageManagementPage;
+    public AddPackagePage addPackagePage;
+    public EditPackagePage editPackagePage;
+    public CreateAccountManagementPage createAccountManagementPage;
+    public UserManagementPage userManagementPage;
+    public CreateUserPage createUserPage;
+    public EditUserPage editUserPage;
+    public ReportsPage reportsPage;
+    public CustomerLoginPage customerLoginPage;
+    public ReportsConsumptionDetailsPage reportsConsumptionDetailsPage;
+
+    public DBConnect DBConnect;
+    public InvokeApplicationPage InvokeApplicationPage;
+
+    public Pages(WebDriver driver, ExtentTest test) {
+        this.driver = driver;
+        this.test = test;
+        PageFactory.initElements(new fieldDecorator(driver, test), this);
+        DBConnect = new DBConnect(driver, test);
+        InvokeApplicationPage = new InvokeApplicationPage(driver, test);
+        adminLoginPage = new AdminLoginPage(driver, test);
+        packageManagementPage = new PackageManagementPage(driver, test);
+        addPackagePage = new AddPackagePage(driver, test);
+        editPackagePage = new EditPackagePage(driver, test);
+        createAccountManagementPage = new CreateAccountManagementPage(driver, test);
+        reportsPage = new ReportsPage(driver, test);
+        userManagementPage = new UserManagementPage(driver, test);
+        editUserPage = new EditUserPage(driver, test);
+        createUserPage = new CreateUserPage(driver, test);
+        customerLoginPage = new CustomerLoginPage(driver, test);
+        reportsConsumptionDetailsPage=new ReportsConsumptionDetailsPage(driver,test);
+    }
+}

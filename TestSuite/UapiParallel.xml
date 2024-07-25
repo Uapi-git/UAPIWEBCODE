@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test-class Suite" parallel="tests" thread-count="4">
+	
+<!-- Scenario 1-->
+	<test name="Test-class test 1">
+		<parameter name="test-name" value="test-method" />
+		<classes>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_053_TC_055_VerifyWhetherUAPIAdminApplicationAllowsUserToClickOnPackagesManagementMenu"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_054_VerifyWhetherUAPIAdminApplicationDisplaysBelowSubMenuOnClickOfPackagesManagementMenuAnnualSubscriptionTiersServiceBundles"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_071_VerifyWhetherUAPIAdminapplicationShouldAllowUserToSelectNumberOfRecordToBeShownOnPageUsingRowsPerPageOptionAndApplicationUserShouldBeAbleToClickOnNextAndBackPageAndApplicationShouldRetrieveDataAccordingToTheUserSelection"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_073_VerifyWhetherUAPIAdminApplicationDisplaysTheAnnualSubscriptionTierDetailsInNonEditableOrViewModeWhenUserClicksOnViewOptionUnderActionMenu"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_074_VerifyWhetherUAPIAdminApplicationDisplaysTheAnnualSubscriptionTierDetailsInEditableModeWhenUserClicksOnEditOptionUnderActionMenu"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_075_VerifyWhetherUAPIAdminApplicationAllowsUserToClickOnCancelButtonOnEditPackageScreenOnClickTheChangesShouldBeDiscardedAndUserShouldBeRedirectedToAnnualSubscriptionTierScreen"/>
+		</classes>
+	</test>
+	
+<!-- Scenario 2-->
+	<test name="Test-class test 2">
+		<parameter name="test-name" value="test-method" />
+		<classes>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_076_VerifyWhetherUAPIAdminApplicationAllowsUserToClickOnSaveButtonOnEditPackageScreenOnClickTheChangesShouldBeAppliedAndUserShouldBeRedirectedToAnnualSubscriptionTierScreen"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_078_TC_079_VerifyWhetherUAPIAdminApplicationDisplaysPopupMessageToConfirmWhetherRecordToBeDeletedWhenUserClicksOnDeleteOptionUnderActionMenu"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_080_VerifyWhetherUAPIAdminDisplayAErrorMessageIfPackageIsAlreadyUsedInAnyCompanyAndUserTriedToDeleteTheSamePackage"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_081_TC_085_VerifyWhetherUAPIAdminApplicationSaveTheRecordAndRedirectsToAnnualSubscriptionTierScreenWhenUserClicksOnSaveButtonIfDataIsValidUAPIAdminApplicationShouldDisplayTheNewlyCreatedPackageUnderAnnualSubscriptionTierScreen"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_083_VerifyWhetherUAPIAdminApplicationDisplaysCancelAndSaveButtonOnAddPackageScreen"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_084_VerifyWhetherUAPIAdminApplicationClosesTheScreenAndRedirectsToAnnualSubscriptionTierScreenWhenUserClicksOnCancelButton"/>
+
+		</classes>
+	</test>
+
+	<!-- Scenario 3-->
+	<test name="Test-class test 3">
+		<parameter name="test-name" value="test-method" />
+		<classes>
+
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_086_VerifyWhetherUAPIAdminApplicationDisplaysAnErrorMessageIfTheEnteredDataIsIncorrectOrLeftBlankInMandatoryFieldsInAddPackageScreen"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0104_VerifyWhetherUAPIAdminApplicationShouldAllowUserToSelectNumberOfRecordToBeShownOnPageUsingRowsPerPageOptionAndApplicationSplitsTheRecordsInMultiplePagesAndDisplaysTheSelectedNOOfTowsRecordsOnOnePage"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0106_VerifyWhetherUAPIAdminApplicationDisplaysTheServiceBundlesDetailsInNonEditableOrViewModeWhenUserClicksOnViewOptionUnderActionMenu"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0107_VerifyWhetherUAPIAdminApplicationDisplaysTheServiceBundlesDetailsInEditableModeWhenUserClicksOnEditOptionUnderActionMenu"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0108_VerifyWhetherOnClickOfSaveButtonUAPIAdminApplicationValidatesAllTheDataAndIfThereIsAnyErrorThenApplicationShouldDisplaysAnErrorMessage"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0109_VerifyWhetherUAPIAdminApplicationAllowsUserToClickOnCancelButtonUnderEditAccountScreenOnClickApplicationDiscardTheChangesAndCloseTheEditAccountScreenAndRedirectsToServicesBundlesPage"/>
+</classes>
+		</test>
+
+	<!-- Scenario 4-->
+	<test name="Test-class test 4">
+	<parameter name="test-name" value="test-method" />
+	<classes>
+		<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0111_TC_0112_VerifyWhetherUAPIAdminApplicationDisplaysPopupMessageToConfirmWhetherRecordToBeDeletedWhenUserClicksOnDeleteOptionUnderActionMenu"/>
+		<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0113_VerifyWhetherUAPIAdminDisplayAErrorMessageIfPackageIsAlreadyUsedInAnyCompanyAndUserTriedToDeleteTheSamePackage"/>
+		<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0114_TC_0118_VerifyWhetherUAPIAdminApplicationAllowsUserToClickOnAddPackageButtonOnTheServiceBundlesScreen"/>
+		<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0116_VerifyWhetherUAPIAdminApplicationDisplaysCancelAndSaveButtonOnAddPackageScreen"/>
+		<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0117_VerifyWhetherUAPIAdminApplicationClosesTheScreenAndRedirectsToServiceBundlesScreenWhenUserClicksOnCancelButton"/>
+		<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0119_VerifyWhetherUAPIAdminApplicationDisplaysAnErrorMessageIfTheEnteredDataIsIncorrectOrLeftBlankInMandatoryFieldsInAddPackageScreen"/>
+
+	</classes>
+	</test>
+
+
+	<!-- Scenario 5-->
+	<test name="Test-class test 5">
+	<parameter name="test-name" value="test-method" />
+	<classes>
+		<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0232_TC_0234_VerifyWhetherUAPIAdminApplicationAllowsUserToClickOnReportsMenu"/>
+		<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0249_VerifyWhetherUAPIAdminApplicationShouldAllowUserToSelectNumberOfRecordToBeShownOnPageUsingRowsPerPageOptionAndApplicationSplitsTheRecordsInMultiplePagesAndDisplaysTheSelectedNOOfRowsRecordsOnOnePage"/>
+		<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0252_VerifyWhetherUAPIAdminApplicationRedirectsToTheSelectedAccountCodeScreenWhenClickOnViewOptionUnderActionMenuAndDisplaysBelowDetailsAccountCodeAccountNameActivePackageNamePackageRemainingDueMonth"/>
+		<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0253_VerifyWhetherUAPIAdminApplicationDisplaysDataTableWithBelowDetailsInSelectedAccountCodeScreenServiceSuccessTransactionsFailureTransactionsTotalTransactionsTotalPrice"/>
+		<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0268_VerifyWhetherUAPIAdminApplicationShouldAllowUserToSelectNumberOfRecordToBeShownOnPageUsingRowsPerPageOptionAndApplicationSplitsTheRecordsInMultiplePagesAndDisplaysTheSelectedNOOfRowsRecordsOnOnePage"/>
+		<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0270_VerifyWhetherUAPIAdminApplicationAllowsUserToDownloadConsumptionDetailsOfSelectedAccountCodeInPdfFormatByClickingOnExportPDFButton"/>
+
+	</classes>
+	</test>
+
+
+	<!-- Scenario 6-->
+	<test name="Test-class test 6">
+	<parameter name="test-name" value="test-method" />
+	<classes>
+		<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0271_VerifyWhetherUAPIAdminApplicationAllowsUserToDownloadConsumptionDetailsOfSelectedAccountCodeInExcelFormatByClickingOnExportExcelButton"/>
+		<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0273_VerifyWhetherUAPIAdminApplicationDisplaysAnErrorMessageAsPleaseSelectYearWhenUserSelectsOnlyMonthValueInSearchByMonthFilter"/>
+		<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0274_VerifyWhetherUAPIAdminApplicationFiltersTheResultDataBasedOnTheValueSelectedInSearchByMonthAndSearchByYearFilterUnderConsumptionDetailsScreen"/>
+		<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0275_VerifyWhetherUAPIAdminApplicationDisplaysMessageAsNoRowsWhenSystemDoesNotFindAnyDataSuitableToTheSelectedFilterCriteriaUnderConsumptionDetailsScreen"/>
+		<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0277_VerifyWhetherUAPIAdminApplicationAllowsUserToDownloadInvoiceReportInPdfFormatOnClickOfExportPDFButton"/>
+		<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0278_VerifyWhetherUAPIAdminApplicationAllowsUserToDownloadInvoiceReportInExcelFormatOnClickOfExportExcelButton"/>
+
+	</classes>
+	</test>
+
+
+	<!-- Scenario 7-->
+	<test name="Test-class test 7">
+	<parameter name="test-name" value="test-method" />
+	<classes>
+		<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0279_VerifyWhetherUAPIAdminApplicationAllowsUserToClickOnClientSubscriptionsSubmenuAndOnClickUAPIAdminApplicationDisplaysTheClientSubscriptionsScreenAtTheRightPane"/>
+		<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0295_VerifyWhetherUAPIAdminApplicationShouldAllowUserToSelectNumberOfRecordToBeShownOnPageUsingRowsPerPageOptionAndApplicationSplitsTheRecordsInMultiplePagesAndDisplaysTheSelectedNOOfRowsRecordsOnOnePage"/>
+		<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0297_VerifyWhetherUAPIAdminApplicationOpensAPackageDetailsPopupWhenUserClicksOnViewOptionUnderActionMenuAndDisplaysDetails"/>
+		<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0298_VerifyUAPIAdminApplicationNavigateTheUserBackToClientSubscriptionPageWhenClickOnBackButton"/>
+		<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0300_VerifyWhetherUAPIAdminApplicationFiltersTheClientSubscriptionDataBasedOnTheSearchInputEnteredInSearchClientNameAndDisplaysTheResults"/>
+		<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0301_VerifyWhetherUAPIAdminApplicationDisplaysMessageAsNoRowsWhenSystemDoesNotFindAnyDataSuitableToTheEnteredKeywordInSearchClientNameSearchOption"/>
+
+	</classes>
+	</test>
+
+	<!-- Scenario 8-->
+	<test name="Test-class test 8">
+		<parameter name="test-name" value="test-method" />
+		<classes>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0302_VerifyUAPIAdminApplicationClearTheSearchWhenTheClientClickOnTheClearSearchSign"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0303_VerifyWhetherUAPIAdminApplicationFiltersTheClientSubscriptionDataBasedOnTheSearchInputEnteredInSearchPackageNameAndDisplaysTheResults"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0304_VerifyWhetherUAPIAdminApplicationDisplaysMessageAsNoRowsWhenSystemDoesNotFindAnyDataSuitableToTheEnteredKeywordInSearchPackageNameSearchOption"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0306_VerifyWhetherUAPIAdminApplicationFiltersTheClientSubscriptionDataBasedOnTheSearchOptionSelectionInSelectPackageStatusFilterAndDisplaysTheResults"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0307_VerifyWhetherUAPIAdminApplicationDisplaysMessageAsNoRowsWhenSystemDoesNotFindAnyDataSuitableForTheSelectedOptionInSelectPackageStatusSearchOption"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0308_VerifyWhetherUAPIAdminApplicationAllowsUserToClickOnUserManagementMenuAndOnClickUAPIAdminApplicationDisplaysTheUserManagementScreenAtTheRightPane"/>
+</classes>
+		</test>
+
+	<!-- Scenario 9-->
+	<test name="Test-class test 9">
+		<parameter name="test-name" value="test-method" />
+		<classes>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0311_VerifyUAPIAdminApplicationRetrieveNewAdminUserDetailsFromAccountManagementScreenAndDisplaysUnderUserManagementPage"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0312_TC_0314_VerifyWhetherUAPIAdminApplicationAllowsUserToSearchUserDetailsWithBelowSearchCriteriaSSearchWithFirstNameLastNameAndEmailID"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0313_TC_0315_VerifyWhetherUAPIAdminApplicationClearsTheInputFromTheSearchTextBoxWhenUserClicksOnXClearButton"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0316_VerifyWhetherUAPIAdminApplicationDisplaysMessageAsNoRowsWhenSystemDoesNotFindAnyDataSuitableToTheEnteredKeywordInSearchWithFirstNameLastNameAndEmailIDSarchOption"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0331_VerifyWhetherUAPIAdminApplicationShouldAllowUserToSelectNumberOfRecordToBeShownOnPageUsingRowsPerPageOptionAndApplicationSplitsTheRecordsInMultiplePagesAndDisplaysTheSelectedNOOfRowsRecordsOnOnePage"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0332_TC_0334_VerifyWhetherUAPIAdminApplicationDoesNotAllowsUserToEditUserNameAndEmailIDOfTheExistingUserUnderEditUserScreenUserNameAndEmailID"/>
+	</classes>
+	</test>
+
+	<!-- Scenario 10-->
+	<test name="Test-class test 10">
+	<parameter name="test-name" value="test-method" />
+	<classes>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0335_VerifyWhetherOnClickOfSaveButtonUAPIAdminApplicationValidatesAllTheDataUnderEditUserScreenAndIfThereIsAnyErrorThenApplicationShouldDisplaysAnErrorMessage"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0340_VerifyWhetherUAPIAdminApplicationDoesNotAllowToDeleteUserIfTheSelectedUserIsTheOnlyUserForTheAccount"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0341_TC_0343_VerifyWhetherUAPIAdminApplicationAllowsUserToClickOnCreateUserButtonOnTheUsersScreen"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Admin_TC_0345_VerifyWhetherUAPIAdminApplicationDisplaysAnErrorMessageIfTheEnteredDataIsIncorrectOrLeftBlankInMandatoryFieldsInCreateUserScreen"/>
+	</classes>
+	</test>
+
+</suite>
