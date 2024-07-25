@@ -20,6 +20,16 @@ public class Pages {
     public CreateUserPage createUserPage;
     public EditUserPage editUserPage;
     public ReportsPage reportsPage;
+    public AccountManagementPage accountManagementPage;
+    public EditAccountManagementPage editAccountManagementPage;
+    public InvoiceManagementPage invoiceManagementPage;
+    public ServiceManagementProvidersListPage serviceManagementProvidersListPage;
+    public EditServiceManagementProviderListPage editServiceProviderListPage;
+    public CustomerProfilePage customerProfilePage;
+    public ServiceManagementHeadsListPage serviceManagementHeadsListPage;
+    public EditServiceManagementHeadsListPage editServiceManagementHeadsListPage;
+    public ServiceManagementServicesListPage serviceManagementServicesListPage;
+
     public CustomerLoginPage customerLoginPage;
     public ReportsConsumptionDetailsPage reportsConsumptionDetailsPage;
 
@@ -43,5 +53,13 @@ public class Pages {
         createUserPage = new CreateUserPage(driver, test);
         customerLoginPage = new CustomerLoginPage(driver, test);
         reportsConsumptionDetailsPage=new ReportsConsumptionDetailsPage(driver,test);
+        accountManagementPage = new AccountManagementPage(driver, test);
+        editAccountManagementPage = new EditAccountManagementPage(driver, test);
+        invoiceManagementPage = new InvoiceManagementPage(driver, test);
+        serviceManagementProvidersListPage = new ServiceManagementProvidersListPage(driver, test);
+        editServiceProviderListPage = new EditServiceManagementProviderListPage(driver, test);
+        serviceManagementServicesListPage = new ServiceManagementServicesListPage(driver, test);
+        customerProfilePage = new CustomerProfilePage(driver, test);
+
     }
 }
