@@ -463,11 +463,11 @@ public class UserManagementPage extends BasePage {
      */
     public void validateFirstRecordDataAsSameAsAdminUserInfo(Map<Object, Object> testDataMap, Log log) {
         try {
-            Assert.assertEquals(getText(UapiOR.Admin_UserManagementPage_FirstRecordFirstName), testDataMap.get("FirstName").toString());
-            Assert.assertEquals(getText(UapiOR.Admin_UserManagementPage_FirstRecordLastName), testDataMap.get("LastName").toString());
-            Assert.assertEquals(getText(UapiOR.Admin_UserManagementPage_FirstRecordCompany), testDataMap.get("CompanyName").toString());
-            Assert.assertEquals(getText(UapiOR.Admin_UserManagementPage_FirstRecordEmail), testDataMap.get("AdminInfoEmail").toString());
-            Assert.assertEquals(getText(UapiOR.Admin_UserManagementPage_FirstRecordMobileNo), testDataMap.get("MobileNumber").toString());
+            VerifyValue1(getText(UapiOR.Admin_UserManagementPage_FirstRecordFirstName), testDataMap.get("FirstName").toString());
+            VerifyValue1(getText(UapiOR.Admin_UserManagementPage_FirstRecordLastName), testDataMap.get("LastName").toString());
+            VerifyValue1(getText(UapiOR.Admin_UserManagementPage_FirstRecordCompany), testDataMap.get("CompanyName").toString());
+            VerifyValue1(getText(UapiOR.Admin_UserManagementPage_FirstRecordEmail), testDataMap.get("AdminInfoEmail").toString());
+            VerifyValue1(getText(UapiOR.Admin_UserManagementPage_FirstRecordMobileNo), testDataMap.get("MobileNumber").toString());
             test.log(Status.PASS, "#FUNC - Verify admin user information from Account management screen is showing under User Management screen " + " * Verify admin user information from Account management screen is showing under User Management screen is Pass * ");
             log.ReportEvent("PASS", "Verify admin user information from Account management screen is showing under User Management screen is successful");
             takeScreenShot();
