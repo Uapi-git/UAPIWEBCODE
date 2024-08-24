@@ -356,11 +356,9 @@ public class CreateUserPage extends BasePage {
             waitForTwoSec();
             takeScreenShot();
             Thread.sleep(7000);
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             test.log(Status.FAIL, "Create new user " + " *  Create new user is fail * ");
             takeScreenShot();
         }
     }
-
 }

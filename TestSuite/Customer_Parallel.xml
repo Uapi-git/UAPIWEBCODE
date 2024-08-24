@@ -1,29 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Test-class Suite" parallel="tests" thread-count="4">
-	
-<!-- Scenario 1-->
+
+	<!-- Scenario 1-->
 	<test name="Test-class test 1">
 		<parameter name="test-name" value="test-method" />
 		<classes>
-	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0349_VerifyApplicationDisplaysOriginalServiceProvidersListIsRetrievedAndDisplaysAccordingToTheSetupDoneUnderAccountManagementModule"/>
-	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0350_TC_0351_VerifyApplicationDisplaysTheListOfServiceHeadsAtTheRightSideOnClickOfAnyOriginalServiceProvidersOption"/>
-	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0355_TC_0357_VerifyApplicationDisplaysTheListOfServicesUnderTheSelectedServiceHeadList"/>
-	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0358_VerifyApplicationAllowUserToEnterTheAPIAuthKeyAndClickOnAuthorizeButtonInSwaggerPage"/>
-	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0364_VerifyWhetherTheApplicationAddToPriceConsumptionAndDedicateFromAvailableAmountEveryTimeTheUserExecuteAServiceRegardlessSuccessfullyOrFailureDependingOnTheSettingsInAdminPortal"/>
-	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0515_VerifyApplicationAllowsUserToClickOnRolesAndPermissionsMenuOnClickApplicationDisplaysTheRolesAndPermissionsScreen"/>
-	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0532_VerifyApplicationDisplaysUserDetailsInViewModeWhenUserClicksOnViewOptionUnderActionMenuInRolesAndPermissionsScreen"/>
-	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0533_VerifyApplicationDisplaysBelowUserDetailsInEditableModeWhenUserClicksOnEditOptionUnderActionMenuInEditRolesAndPermissionsScreen"/><class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0536_VerifyOnSelectionOfEnableAllRadioButtonApplicationSelectsAllThePermissionsAndDisplaysInTheSelectionBoxInEditRolesAndPermissionScreen"/>
-	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0537_VerifyApplicationAllowsUserToDeleteAnyPermissionFromTheSelectionBoxByClickingOnXDeleteIconInEditRolesAndPermissionScreen"/>
-	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0538_TC_0539_VerifyApplicationSelectAndDeselectThePermissionsUnderThePermissionSelectionBoxDropDownValuesInEditRolesAndPermissionScreen"/>
-	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0540_VerifyApplicationClearsAllThePermissionsWhenUserClicksOnClearIconUnderDisplayedAllPermissionSelectionBoxInEditRolesAndPermissionScreen"/>
-	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0541_VerifyOnClickOfSaveButtonApplicationValidatesAllTheDataUnderEditRoleScreenAndIfThereIsAnyErrorThenApplicationDisplaysAnErrorMessage"/>
-	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0542_VerifyApplicationNavigateTheUserBackToRoleAndPermissionsPageWhenTheUserClickOnCancelButtonInEditRolesAndPermissionScreen"/>
-	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0543_TC_0544_VerifyApplicationDisplayAConfirmationMessageWhenTheUserDeleteTheRecordInRolesAndPermissionScreen"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0349_TC_0348_VerifyApplicationDisplaysOriginalServiceProvidersListIsRetrievedAndDisplaysAccordingToTheSetupDoneUnderAccountManagementModule"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0350_TC_0351_TC_0353_VerifyApplicationDisplaysTheListOfServiceHeadsAtTheRightSideOnClickOfAnyOriginalServiceProvidersOption"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0355_TC_0357_VerifyApplicationDisplaysTheListOfServicesUnderTheSelectedServiceHeadList"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0358_VerifyApplicationAllowUserToEnterTheAPIAuthKeyAndClickOnAuthorizeButtonInSwaggerPage"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0364_VerifyWhetherTheApplicationAddToPriceConsumptionAndDedicateFromAvailableAmountEveryTimeTheUserExecuteAServiceRegardlessSuccessfullyOrFailureDependingOnTheSettingsInAdminPortal"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0515_VerifyApplicationAllowsUserToClickOnRolesAndPermissionsMenuOnClickApplicationDisplaysTheRolesAndPermissionsScreen"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0532_VerifyApplicationDisplaysUserDetailsInViewModeWhenUserClicksOnViewOptionUnderActionMenuInRolesAndPermissionsScreen"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0533_VerifyApplicationDisplaysBelowUserDetailsInEditableModeWhenUserClicksOnEditOptionUnderActionMenuInEditRolesAndPermissionsScreen"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0536_VerifyOnSelectionOfEnableAllRadioButtonApplicationSelectsAllThePermissionsAndDisplaysInTheSelectionBoxInEditRolesAndPermissionScreen"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0537_VerifyApplicationAllowsUserToDeleteAnyPermissionFromTheSelectionBoxByClickingOnXDeleteIconInEditRolesAndPermissionScreen"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0538_TC_0539_VerifyApplicationSelectAndDeselectThePermissionsUnderThePermissionSelectionBoxDropDownValuesInEditRolesAndPermissionScreen"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0540_VerifyApplicationClearsAllThePermissionsWhenUserClicksOnClearIconUnderDisplayedAllPermissionSelectionBoxInEditRolesAndPermissionScreen"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0541_VerifyOnClickOfSaveButtonApplicationValidatesAllTheDataUnderEditRoleScreenAndIfThereIsAnyErrorThenApplicationDisplaysAnErrorMessage"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0542_VerifyApplicationNavigateTheUserBackToRoleAndPermissionsPageWhenTheUserClickOnCancelButtonInEditRolesAndPermissionScreen"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0543_TC_0544_VerifyApplicationDisplayAConfirmationMessageWhenTheUserDeleteTheRecordInRolesAndPermissionScreen"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0509_TC_0510_VerifyWhetherApplicationDisplaysPopupMessageToConfirmWhetherRecordToBeDeletedWhenUserClicksOnDeleteOptionUnderActionMenu"/>
+
 		</classes>
 	</test>
-	
-<!-- Scenario 2-->
+
+	<!-- Scenario 2-->
 	<test name="Test-class test 2">
 		<parameter name="test-name" value="test-method" />
 		<classes>
@@ -31,6 +34,7 @@
 			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0546_VerifyApplicationNavigateTheUserBackToRoleAndPermissionsPageWhenTheUserClickOnCancelButtonInAddRolesAndPermissionScreen"/>
 			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0547_VerifyApplicationDisplayErrorMessagesWhenClickOnSaveButtonWhileSomeFieldsAreEmptyOrIncorrectInAddRolesAndPermissionScreen"/>
 			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0548_VerifyApplicationNavigateTheUserBackToRoleAndPermissionsPageWhenTheUserClickOnSaveButtonAndANewRecordWillBeAddedInRolesAndPermissionScreen"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0549_VerifyWhetherTheApplicationRetrieveTheCustomerPortalPagesAccordingToTheSelectedPermissionsFromTheRole"/>
 			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0552_VerifyApplicationDisplaysBelowDetailsInNonEditableModeUnderProfileTab"/>
 			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0553_VerifyApplicationAllowsUserToClickOnAPIKeyTabInProfileScreen"/>
 			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0555_VerifyApplicationAllowsUserToCopyAPIkeyByClickingOnCopyIconUnderApiKeyTab"/>

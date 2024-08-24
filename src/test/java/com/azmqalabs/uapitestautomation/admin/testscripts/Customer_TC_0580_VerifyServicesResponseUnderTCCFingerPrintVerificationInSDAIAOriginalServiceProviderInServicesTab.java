@@ -103,7 +103,7 @@ public class Customer_TC_0580_VerifyServicesResponseUnderTCCFingerPrintVerificat
 				String apiKeyValue=Pages.customerProfilePage.getApiKey();
 				Pages.customerServicesPage.clickOnCustomerServicesTab();
 				Pages.customerServicesPage.verifyServicesPageIsDisplayed(Log);
-				Pages.customerServicesPage.clickOnServiceHeadName(testdatamap,Log);
+				Pages.customerServicesPage.clickOnServiceProviderName(testdatamap,Log);
 				Pages.customerServicesPage.clickOnExploreApi(testdatamap,Log);
 				Pages.customerServicesPage.verifyServicesScreenIsDisplayed(testdatamap,Log);
 				Pages.customerServicesPage.verifyListOfServicesForServiceHeadFingerprintVerification(Log);

@@ -1,11 +1,11 @@
 package com.azmqalabs.uapitestautomation.apppages.collectionofpages;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
 import com.aventstack.extentreports.ExtentTest;
 import com.azmqalabs.uapitestautomation.apppages.allapplicationpages.*;
 import com.azmqalabs.uapitestautomation.common.DBConnect;
 import com.azmqalabs.uapitestautomation.common.uielement.fieldDecorator;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 
 public class Pages {
 

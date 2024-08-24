@@ -90,7 +90,7 @@ public class CustomerServicesPage extends BasePage {
     }
 
     // Method to click on Original Service Provider Name
-    public void clickOnServiceHeadName(Map<Object, Object> testdatamap, Log Log) {
+    public void clickOnServiceProviderName(Map<Object, Object> testdatamap, Log Log) {
         WebClick("//h2[text()='" + testdatamap.get("OriginalServiceProviderName").toString() + "']");
         Log.ReportEvent("PASS", " Click on any Original Service Providers is Successful");
         this.takeScreenShot();

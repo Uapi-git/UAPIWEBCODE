@@ -103,7 +103,7 @@ public class Customer_TC_0584_VerifyServicesResponseUnderPowerOfAttorneyInfoInMi
 				String apiKeyValue=Pages.customerProfilePage.getApiKey();
 				Pages.customerServicesPage.clickOnCustomerServicesTab();
 				Pages.customerServicesPage.verifyServicesPageIsDisplayed(Log);
-				Pages.customerServicesPage.clickOnServiceHeadName(testdatamap,Log);
+				Pages.customerServicesPage.clickOnServiceProviderName(testdatamap,Log);
 				Pages.customerServicesPage.clickOnExploreApi(testdatamap,Log);
 				Pages.customerServicesPage.verifyServicesScreenIsDisplayed(testdatamap,Log);
 				Pages.customerServicesPage.verifyListOfServicesForServiceHeadPowerOfAttorney(Log);
@@ -111,8 +111,8 @@ public class Customer_TC_0584_VerifyServicesResponseUnderPowerOfAttorneyInfoInMi
 				Pages.customerServicesPage.clickOnService(testdatamap,Log);
 				Pages.customerServicesPage.clickOnTryItOut(Log);
 				Pages.customerServicesPage.enterCode(testdatamap,Log);
-				Pages.customerServicesPage.enterPrincipalId(testdatamap,Log);
-				Pages.customerServicesPage.enterAgentId(testdatamap,Log);
+//				Pages.customerServicesPage.enterPrincipalId(testdatamap,Log);
+//				Pages.customerServicesPage.enterAgentId(testdatamap,Log);
 				Pages.customerServicesPage.clickOnExecute(Log);
 				Pages.customerServicesPage.verifyApiResponseStatusCode(testdatamap,Log);
 				Pages.customerLoginPage.logout(Log);

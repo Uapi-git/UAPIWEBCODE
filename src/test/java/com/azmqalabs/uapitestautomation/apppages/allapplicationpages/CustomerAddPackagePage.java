@@ -163,7 +163,6 @@ public class CustomerAddPackagePage extends BasePage {
             WebClick(UapiOR.Customer_AddPackagePage_RenewPackageBtn);
             Thread.sleep(1000);
 //            VerifyValue1(getText(UapiOR.Customer_AddPackagePage_AreYouSureYouWantToSelectThisPackagePopUpTxt),"Are you sure you want to select this package?");
-            VerifyValue1(getText(UapiOR.Customer_AddPackagePage_AddNewAnnualSubscriptionTierPopUpHeader),"Add New Annual Subscription Tier");
             test.log(Status.PASS, "#FUNC - Click on 'Renew Package' button " + " *  Click on 'Renew Package' button is Pass * ");
             log.ReportEvent("PASS", "Click on 'Renew Package' button is successful");
             takeScreenShot();
@@ -584,7 +583,7 @@ public class CustomerAddPackagePage extends BasePage {
      * Method to select current date as activation date in add new service bundle pop up
      * @param log <Log> - Log
      */
-    public void selectCurrentDateAsActivationDateInAddNewServiceBundlePopUp(Map<Object,Object>testDataMap,Log log) {
+    public void selectDateAsActivationDateInAddNewServiceBundlePopUp(Map<Object,Object>testDataMap,Log log) {
         try {
             WebClick(UapiOR.Customer_AddPackagePage_AddNewAnnualSubscriptionTierPopUpActivationDate);
 //            WebClick(UapiOR.Customer_AddPackagePage_AddNewAnnualSubscriptionTierPopUpTodayDateActivationDate);

@@ -290,4 +290,15 @@ public class CustomerRolesAndPermissionsPage extends BasePage {
     public void clickOnClearButton() {
         WebClick(UapiOR.Customer_CustomerRolesAndPermissions_Page_ClearButton);
     }
+
+    // Method to verify Selected permission is Displayed In Selected Permission Box in Edit Roles And Permission Screen
+    public void verifySelectedPermissionIsDisplayedForUser(Map<Object, Object> testdatamap, Log Log) throws Exception {
+        String selectedPermissionsNames = testdatamap.get("SelectedPermissions").toString();
+        String[] permissionNames = selectedPermissionsNames.split(",");
+        for (String permissionName : permissionNames) {
+            verifyElementIsPresent("//h2[text()='" + permissionName + "']");
+        }
+        Log.ReportEvent("PASS", " verify Selected permission is displayed in Selected permission Box is Successful");
+        this.takeScreenShot();
+    }
 }

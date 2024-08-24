@@ -662,8 +662,9 @@ public class UapiOR {
     public final static String Customer_UserManagementPage = "//h2/ancestor::div/preceding-sibling::div//p";
     public final static String Customer_CreateUserPage_RoleDropdown = "//div[@role='combobox']//span";
     public final static String Customer_CreateUserPage_StatusDropdown = "//div[@aria-label='Select Status' ]";
-    public final static String Customer_AddOrEditUserPage_SaveButton = "//button[@id='save']";
     public final static String Customer_UserManagementPage_DeleteUserConfirmationPopupMsg = "//button[@aria-label='close']/following::div//h3";
+    public final static String Customer_UserManagement_RoleDropdown = "//div[@aria-label='Select Role']//*[@data-testid='ArrowDropDownIcon']";
+    public final static String Customer_EditUserManagement_SaveButton = "//button[@id='save']";
 
     //Customer Add or edit user page
     public final static String Customer_UserManagementPage_Save = "//button[@id='save']";
@@ -677,6 +678,7 @@ public class UapiOR {
     public final static String Customer_AddOrEditUserPage_RoleDropdown = "//div[@aria-label='Select Role']";
     public final static String Customer_AreYouSureYOuWantToCancelPopup_CancelBtn = "//button[text()='Yes']";
     public final static String Customer_AddOrEditUserPage_CancelBtn = "//button[@id='cancel']";
+    public final static String Customer_AddOrEditUserPage_SaveButton = "//button[@id='save']";
 }
 
 

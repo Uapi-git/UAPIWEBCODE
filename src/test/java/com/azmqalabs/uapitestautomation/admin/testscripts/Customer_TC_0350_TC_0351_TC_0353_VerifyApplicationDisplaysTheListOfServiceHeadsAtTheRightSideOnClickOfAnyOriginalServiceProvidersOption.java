@@ -1,8 +1,8 @@
 /**
 *
-* Test Script Name                      : Customer_TC_0355_TC_0357_VerifyApplicationDisplaysTheListOfServicesUnderTheSelectedServiceHeadList
-* TestDataSheet                         : Customer_TC_0355_TC_0357
-* Objective                             : Verify whether application displays the list of API's/Services under the selected Service Head List.
+* Test Script Name                      : Customer_TC_0350_TC_0351_TC_0353_VerifyApplicationDisplaysTheListOfServiceHeadsAtTheRightSideOnClickOfAnyOriginalServiceProvidersOption
+* TestDataSheet                         : Customer_TC_0350_TC_0351_TC_0353
+* Objective                             : Verify whether application displays the list of Service heads at the right side on click of any Original Service Providers option.
 * Version                               : 1.0
 * Author                                : Arun Kumar MS
 * Created Date                          : 03/07/2024
@@ -31,10 +31,10 @@ import java.util.Map;
 
 // TEST LISTENER
 @Listeners(TestListener.class)
-public class Customer_TC_0355_TC_0357_VerifyApplicationDisplaysTheListOfServicesUnderTheSelectedServiceHeadList {
+public class Customer_TC_0350_TC_0351_TC_0353_VerifyApplicationDisplaysTheListOfServiceHeadsAtTheRightSideOnClickOfAnyOriginalServiceProvidersOption {
 
 	// DECLARATION SECTION
-	  static String TestDataTab="Customer_TC_0355_TC_0357";
+	  static String TestDataTab="Customer_TC_0350_TC_0351_TC_035";
 
 	  private webDriverEventListener eventListener;
 	  private WebDriver driver;
@@ -56,7 +56,7 @@ public class Customer_TC_0355_TC_0357_VerifyApplicationDisplaysTheListOfServices
 
 		// FACTORY - DATA PROVIDER
 	    @Factory (dataProvider="TestDataProvider")
-	    public Customer_TC_0355_TC_0357_VerifyApplicationDisplaysTheListOfServicesUnderTheSelectedServiceHeadList(Map<Object, Object> testdatamap){
+	    public Customer_TC_0350_TC_0351_TC_0353_VerifyApplicationDisplaysTheListOfServiceHeadsAtTheRightSideOnClickOfAnyOriginalServiceProvidersOption(Map<Object, Object> testdatamap){
 	    	this.testdatamap=testdatamap;
 	        this.TestScriptID=testdatamap.get("TestScriptID").toString();
 	        this.sBrowserTestData=testdatamap.get("Browser").toString();
@@ -99,9 +99,7 @@ public class Customer_TC_0355_TC_0357_VerifyApplicationDisplaysTheListOfServices
 				Pages.customerServicesPage.clickOnCustomerServicesTab();
 				Pages.customerServicesPage.verifyServicesPageIsDisplayed(Log);
 				Pages.customerServicesPage.clickOnServiceProviderName(testdatamap,Log);
-				Pages.customerServicesPage.clickOnExploreApi(testdatamap,Log);
-				Pages.customerServicesPage.verifyServicesScreenIsDisplayed(testdatamap,Log);
-				Pages.customerServicesPage.verifyListOfServicesForServiceHeadSimah(Log);
+				Pages.customerServicesPage.verifySelectedServiceHeads(testdatamap,Log);
 				Pages.customerLoginPage.logout(Log);
 
 				Log.PostTestStatus(TestScriptID);

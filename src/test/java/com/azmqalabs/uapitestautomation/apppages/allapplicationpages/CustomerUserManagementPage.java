@@ -446,6 +446,20 @@ public class CustomerUserManagementPage extends BasePage {
      */
     public void verifyDeleteConfirmationMessage(Map<Object,Object>testDataMap) throws IOException {
         Assert.assertEquals(getText(UapiOR.Admin_AccountManagement_Page_SuccessfulToastMessage), "User '" + testDataMap.get("FirstName").toString() + " " + testDataMap.get("LastName").toString() + "' deleted successfully!");
-            VerifyValue1(getText(UapiOR.Admin_AccountManagement_Page_SuccessfulToastMessage), "User '" + testDataMap.get("FirstName").toString() + " " + testDataMap.get("LastName").toString() + "' deleted successfully!");
+        VerifyValue1(getText(UapiOR.Admin_AccountManagement_Page_SuccessfulToastMessage), "User '" + testDataMap.get("FirstName").toString() + " " + testDataMap.get("LastName").toString() + "' deleted successfully!");
+    }
+    // Method to select City Role from dropdown
+    public void selectRoleFromDropdown(Map<Object, Object> testdatamap) throws InterruptedException {
+        Thread.sleep(1000);
+        WebClickUsingActions(UapiOR.Customer_UserManagement_RoleDropdown);
+        Thread.sleep(1000);
+        WebClickUsingJS("//li[text()='" + testdatamap.get("RoleName").toString() + "']");
+    }
+    // Method to click on Save
+    public void clickOnSave(Log Log) throws InterruptedException {
+        Thread.sleep(3000);
+        WebClick(UapiOR.Customer_EditUserManagement_SaveButton);
+        Log.ReportEvent("PASS", "Click on 'Save' option in Edit User Management Screen is successful");
+        this.takeScreenShot();
     }
 }

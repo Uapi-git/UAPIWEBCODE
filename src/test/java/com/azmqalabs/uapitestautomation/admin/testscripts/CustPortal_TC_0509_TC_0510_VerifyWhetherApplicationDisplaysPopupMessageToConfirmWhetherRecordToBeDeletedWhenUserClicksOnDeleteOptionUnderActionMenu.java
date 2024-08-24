@@ -96,7 +96,7 @@ public class CustPortal_TC_0509_TC_0510_VerifyWhetherApplicationDisplaysPopupMes
             Pages.customerUserManagementPage.clickOnUserManagementMenu(Log);
             Pages.customerUserManagementPage.clickOnCreateUser(Log);
             Pages.createUserPage.createNewUserInCustomerPortal(testdatamap,Log);
-            driver.navigate().back();
+//            driver.navigate().back();
             Pages.customerUserManagementPage.searchUser(testdatamap,Log);
             Pages.customerUserManagementPage.clickOnFirstRecordActionButton(Log);
             Pages.customerUserManagementPage.clickOnDeleteOptionFromActionList(Log);

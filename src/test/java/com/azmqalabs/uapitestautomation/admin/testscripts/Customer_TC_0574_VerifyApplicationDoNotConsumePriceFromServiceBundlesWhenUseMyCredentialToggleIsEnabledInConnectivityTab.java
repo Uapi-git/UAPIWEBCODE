@@ -122,7 +122,7 @@ public class Customer_TC_0574_VerifyApplicationDoNotConsumePriceFromServiceBundl
 				String apiKeyValue=Pages.customerProfilePage.getApiKey();
 				Pages.customerServicesPage.clickOnCustomerServicesTab();
 				Pages.customerServicesPage.verifyServicesPageIsDisplayed(Log);
-				Pages.customerServicesPage.clickOnServiceHeadName(testdatamap,Log);
+				Pages.customerServicesPage.clickOnServiceProviderName(testdatamap,Log);
 				Pages.customerServicesPage.clickOnExploreApi(testdatamap,Log);
 				Pages.customerServicesPage.authorizeApiKey(apiKeyValue,Log);
 				Pages.customerServicesPage.clickOnService(testdatamap,Log);

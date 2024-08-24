@@ -94,7 +94,7 @@ public void myTest() throws Exception {
         Pages.customerAddPackagePage.clickOnAvailableServiceBundlePackageBasedOnPackageName(testdatamap,Log);
         Pages.customerAddPackagePage.clickOnGenerateInvoiceButton(Log);
         Pages.customerAddPackagePage.clickOnAreYouSureYouWantToSelectThisPackagePopUpYesBtnForServiceBundle(Log);
-        Pages.customerAddPackagePage.selectCurrentDateAsActivationDateInAddNewServiceBundlePopUp(testdatamap,Log);
+        Pages.customerAddPackagePage.selectDateAsActivationDateInAddNewServiceBundlePopUp(testdatamap,Log);
         Pages.customerAddPackagePage.clickOnAddNewServiceBundlePopUpSaveBtn(Log);
         Pages.customerAddPackagePage.clickOnNoBtnInServiceBundleWillBeActivatedOnTheActivationDatePopUp(Log);
         Pages.customerAddPackagePage.clickOnAddNewServiceBundlePopUpCloseBtn(Log);

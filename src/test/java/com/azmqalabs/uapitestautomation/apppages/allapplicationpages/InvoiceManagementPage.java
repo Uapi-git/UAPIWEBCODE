@@ -312,6 +312,71 @@ public class InvoiceManagementPage extends BasePage {
     public void verifyDownloadedFileFormat(String expectedFileStartingName,String expectedFileFormat) {
         validateDownloadedFileFormat(expectedFileStartingName,expectedFileFormat);
     }
+    /**
+     * Used to store my invoices grid data
+     */
+    public List<Map<String, Object>> myInvoicesGridData = new ArrayList<>();
+    /**
+     * Method to parse my invoices grid data
+     */
+    public void parseMyInvoicesGridData1() throws InterruptedException {
+        int totalCount = 0; // Total count of records processed across all pages
+        // Process each page
+        while (true) {
+            waitForTwoSec();
+            List<WebElement> myInvoicesGridRecordsElement = driver.findElements(By.xpath("//div[@role='row']"));
+            List<WebElement> myInvoicesGridDataElement = driver.findElements(By.xpath("//div[@role='gridcell']"));
+            // Process each row on the current page
+            for (int i = 0; i < myInvoicesGridDataElement.size(); i += 8) {
+                Map<String, Object> record = new HashMap<>(); // Create a new map for each row
+                // Populate record with data for the current row
+                record.put("Invoice No", myInvoicesGridDataElement.get(i).getText());
+                record.put("Sadad Invoice", myInvoicesGridDataElement.get(i + 1).getText());
+                record.put("Invoice Type", myInvoicesGridDataElement.get(i + 2).getText());
+                record.put("Account Name", myInvoicesGridDataElement.get(i + 3).getText());
+                record.put("Package Name", myInvoicesGridDataElement.get(i + 4).getText());
+                record.put("Amount", myInvoicesGridDataElement.get(i + 5).getText());
+                record.put("Invoice Issue Date", myInvoicesGridDataElement.get(i + 6).getText());
+                record.put("Status", myInvoicesGridDataElement.get(i + 7).getText());
+                record.put("record", myInvoicesGridRecordsElement.get(i / 8));
+                myInvoicesGridData.add(record);
 
+                totalCount++; // Increment the total count
+            }
+            // Check if there's a next page
+            if (!IsDispalyed(UapiOR.Admin_InvoiceManagement_GoToNextPage)) {
+                takeScreenShot();
+                break; // Exit the loop if there's no next page
+            }
+            // Click the next page button
+            WebClick(UapiOR.Admin_InvoiceManagement_GoToNextPage);
+            takeScreenShot();
+        }
+        System.out.println("Total records processed: " + totalCount);
+        System.out.println("Invoice Management table: " + myInvoicesGridData);
+    }
+    /**
+     * Method to verify application added new invoice for added package
+     * @param generatePackageDate <String> - generate Package Date
+     * @param testDataMap <Map> - Test data map
+     */
+    public void  verifyApplicationAddedNewInvoiceForAddedPackage(String generatePackageDate,Map<Object,Object> testDataMap) {
+        try {
+            parseMyInvoicesGridData1();
+            for (Map<String, Object> myInvoicesGridDate : myInvoicesGridData) {
+                if (myInvoicesGridDate.get("Invoice Issue Date").toString().equals(generatePackageDate)) {
+                    VerifyValue1(myInvoicesGridDate.get("Invoice Issue Date").toString(), generatePackageDate);
+                    VerifyValue1(myInvoicesGridDate.get("Package Name").toString(), testDataMap.get("PackageName").toString());
+                    VerifyValue1(myInvoicesGridDate.get("Account Name").toString(), testDataMap.get("Account Name").toString());
+
+                }
+            }
+        }
+        catch(Exception e){
+            test.log(Status.FAIL, "Verify Application added new invoice for each added package " + " *  Application added new invoice for each added package is Fail * ");
+            takeScreenShot();
+
+        }
+    }
 
 }

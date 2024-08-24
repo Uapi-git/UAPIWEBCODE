@@ -94,14 +94,14 @@ public void myTest() throws Exception {
         Pages.customerAddPackagePage.clickOnAvailableServiceBundlePackageBasedOnPackageName(testdatamap,Log);
         Pages.customerAddPackagePage.clickOnGenerateInvoiceButton(Log);
         Pages.customerAddPackagePage.clickOnAreYouSureYouWantToSelectThisPackagePopUpYesBtnForServiceBundle(Log);
-        Pages.customerAddPackagePage.selectCurrentDateAsActivationDateInAddNewServiceBundlePopUp(testdatamap,Log);
+        Pages.customerAddPackagePage.selectDateAsActivationDateInAddNewServiceBundlePopUp(testdatamap,Log);
         Pages.customerAddPackagePage.clickOnAddNewServiceBundlePopUpSaveBtn(Log);
         Pages.customerAddPackagePage.verifyServiceBundleWillBeActivatedOnTheActivationDatePopUp(Log);
         Pages.customerAddPackagePage.clickOnYesBtnInServiceBundleWillBeActivatedOnTheActivationDatePopUp(Log);
         Pages.customerPackageManagementPage.searchServicePackageName(testdatamap,Log);
         Pages.customerPackageManagementPage.setGeneratedInvoicePackageName(testdatamap);
         Pages.customerPackageManagementPage.VerifyRecordIsSavedAfterRenewOrGenerateInvoiceForTheServiceBundlePackage(testdatamap,Log);
-        Pages.customerPackageManagementPage.VerifyRecordStatusAfterRenewOrGenerateInvoiceForThePackage("Pending Payment",Log);
+        Pages.customerPackageManagementPage.VerifyRecordStatusAfterRenewOrGenerateInvoiceForThePackageForServicesBundle("Pending Payment",Log);
         Pages.customerLoginPage.logout(Log);
 
         Log.PostTestStatus(TestScriptID);

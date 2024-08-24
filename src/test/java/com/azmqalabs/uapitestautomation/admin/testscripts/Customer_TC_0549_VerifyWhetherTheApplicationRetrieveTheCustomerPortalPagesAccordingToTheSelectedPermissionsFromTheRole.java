@@ -1,11 +1,11 @@
 /**
 *
-* Test Script Name                      : Customer_TC_0350_TC_0351_VerifyApplicationDisplaysTheListOfServiceHeadsAtTheRightSideOnClickOfAnyOriginalServiceProvidersOption
-* TestDataSheet                         : Customer_TC_0350_TC_0351
-* Objective                             : Verify whether application displays the list of Service heads at the right side on click of any Original Service Providers option.
+* Test Script Name                      : Customer_TC_0549_VerifyWhetherTheApplicationRetrieveTheCustomerPortalPagesAccordingToTheSelectedPermissionsFromTheRole
+* TestDataSheet                         : Customer_TC_0549
+* Objective                             : Verify whether the Application retrieve the customer portal pages according to the selected permissions from the role.
 * Version                               : 1.0
 * Author                                : Arun Kumar MS
-* Created Date                          : 03/07/2024
+* Created Date                          : 22/08/2024
 * Last Updated on                       : N/A
 * Updated By                            : 
 * Pre-Conditions                        : Valid login credentials of ADMIN user is required
@@ -31,10 +31,12 @@ import java.util.Map;
 
 // TEST LISTENER
 @Listeners(TestListener.class)
-public class Customer_TC_0350_TC_0351_VerifyApplicationDisplaysTheListOfServiceHeadsAtTheRightSideOnClickOfAnyOriginalServiceProvidersOption {
+public class
+
+Customer_TC_0549_VerifyWhetherTheApplicationRetrieveTheCustomerPortalPagesAccordingToTheSelectedPermissionsFromTheRole {
 
 	// DECLARATION SECTION
-	  static String TestDataTab="Customer_TC_0350_TC_0351";
+	  static String TestDataTab="Customer_TC_0549";
 
 	  private webDriverEventListener eventListener;
 	  private WebDriver driver;
@@ -56,7 +58,7 @@ public class Customer_TC_0350_TC_0351_VerifyApplicationDisplaysTheListOfServiceH
 
 		// FACTORY - DATA PROVIDER
 	    @Factory (dataProvider="TestDataProvider")
-	    public Customer_TC_0350_TC_0351_VerifyApplicationDisplaysTheListOfServiceHeadsAtTheRightSideOnClickOfAnyOriginalServiceProvidersOption(Map<Object, Object> testdatamap){
+	    public Customer_TC_0549_VerifyWhetherTheApplicationRetrieveTheCustomerPortalPagesAccordingToTheSelectedPermissionsFromTheRole(Map<Object, Object> testdatamap){
 	    	this.testdatamap=testdatamap;
 	        this.TestScriptID=testdatamap.get("TestScriptID").toString();
 	        this.sBrowserTestData=testdatamap.get("Browser").toString();
@@ -93,14 +95,30 @@ public class Customer_TC_0350_TC_0351_VerifyApplicationDisplaysTheListOfServiceH
 	        	System.out.println(testdatamap.get(TestScriptID));
 
 				Log.ReportEvent("PASS", className + " - Execution Started");
+				String UserName=testdatamap.get("UserName").toString();
+				String UserPassword=testdatamap.get("UserPassword").toString();
 
 				Pages.InvokeApplicationPage.launchApplication(testdatamap);
 				Pages.customerLoginPage.loginToApplication(testdatamap,Log);
-				Pages.customerServicesPage.clickOnCustomerServicesTab();
-				Pages.customerServicesPage.verifyServicesPageIsDisplayed(Log);
-				Pages.customerServicesPage.clickOnServiceHeadName(testdatamap,Log);
-				Pages.customerServicesPage.verifySelectedServiceHeads(testdatamap,Log);
+				Pages.customerRolesAndPermissionsPage.clickOnCustomerRolesAndPermission();
+//				Pages.customerRolesAndPermissionsPage.verifyRolesAndPermissionPageIsDisplayed(Log);
+//				Pages.customerRolesAndPermissionsPage.clickOnAddRole(Log);
+//				Pages.customerRolesAndPermissionsPage.verifyAddRolesAndPermissionPageIsDisplayed(Log);
+//				Pages.customerRolesAndPermissionsPage.createNewRole(testdatamap,Log);
+				Pages.customerRolesAndPermissionsPage.searchRole(testdatamap,Log);
+				Pages.customerRolesAndPermissionsPage.verifyRoleName(testdatamap,Log);
+				Pages.customerUserManagementPage.clickOnUserManagementMenu(Log);
+				Pages.customerUserManagementPage.searchUser(testdatamap,Log);
+				Pages.customerUserManagementPage.clickOnFirstRecordActionButton(Log);
+				Pages.customerUserManagementPage.clickOnEditOptionFromActionList(Log);
+				Pages.customerUserManagementPage.selectRoleFromDropdown(testdatamap);
+				Pages.customerUserManagementPage.clickOnSave(Log);
 				Pages.customerLoginPage.logout(Log);
+				Pages.InvokeApplicationPage.launchApplication(testdatamap);
+				Pages.customerLoginPage.loginToApplication(UserName,UserPassword,Log);
+				Pages.customerRolesAndPermissionsPage.verifySelectedPermissionIsDisplayedForUser(testdatamap,Log);
+				Pages.customerLoginPage.logout(Log);
+
 
 				Log.PostTestStatus(TestScriptID);
 				driver.quit();

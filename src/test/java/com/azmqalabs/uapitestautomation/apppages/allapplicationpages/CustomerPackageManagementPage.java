@@ -427,6 +427,7 @@ public class CustomerPackageManagementPage extends BasePage {
      */
     public void VerifyRecordIsSavedAfterRenewOrGenerateInvoiceForThePackage(Log log) {
         try {
+            waitForTwoSec();
             parseAnnualPackageManagementGridData();
             int latestPackageNo = packageManagementGridData.size() - 1;
             String actualPackageName = packageManagementGridData.get(latestPackageNo).get("Package Name").toString();
@@ -445,6 +446,25 @@ public class CustomerPackageManagementPage extends BasePage {
      * Method to verify record status after renew or generate invoice for the package
      * @param log <Log> - Log
      */
+    public void VerifyRecordStatusAfterRenewOrGenerateInvoiceForThePackageForServicesBundle(String status,Log log) {
+        try {
+            mouseOver(driver,getElement("//div[@role='grid']/following-sibling::div//p"));
+            parseServiceBundlePackageManagementGridData();
+            int latestPackageNo = packageManagementGridData.size() - 1;
+            String actualPackageName = packageManagementGridData.get(latestPackageNo).get("Status").toString();
+            VerifyValue1(actualPackageName, status);
+            Assert.assertEquals(actualPackageName, status);
+            takeScreenShot();
+        } catch (Exception e) {
+            test.log(Status.FAIL, "Verify record status " + status + " * Verify record status"+status+" is Fail * ");
+            takeScreenShot();
+        }
+    }
+
+    /**
+     * Method to verify record status after renew or generate invoice for the package
+     * @param log <Log> - Log
+     */
     public void VerifyRecordStatusAfterRenewOrGenerateInvoiceForThePackage(String status,Log log) {
         try {
             mouseOver(driver,getElement("//div[@role='grid']/following-sibling::div//p"));
@@ -455,7 +475,7 @@ public class CustomerPackageManagementPage extends BasePage {
             Assert.assertEquals(actualPackageName, status);
             takeScreenShot();
         } catch (Exception e) {
-            test.log(Status.FAIL, "Verify record status " + status + " * Verify record status+status"+status+" is Fail * ");
+            test.log(Status.FAIL, "Verify record status " + status + " * Verify record status"+status+" is Fail * ");
             takeScreenShot();
         }
     }

@@ -1,7 +1,7 @@
 /**
 *
-* Test Script Name                      : Customer_TC_0348_VerifyApplicationDisplaysOriginalServiceProvidersListIsRetrievedAndDisplaysAccordingToTheSetupDoneUnderAccountManagementModule
-* TestDataSheet                         : Customer_TC_0348
+* Test Script Name                      : Customer_TC_0349_TC_0348_VerifyApplicationDisplaysOriginalServiceProvidersListIsRetrievedAndDisplaysAccordingToTheSetupDoneUnderAccountManagementModule
+* TestDataSheet                         : Customer_TC_0349_TC_0348
 * Objective                             : Verify whether the Original Service Providers list is retrieved and displays according to the setup done under 'Account Management' module in Application Portal
 * Version                               : 1.0
 * Author                                : Arun Kumar MS
@@ -31,10 +31,10 @@ import java.util.Map;
 
 // TEST LISTENER
 @Listeners(TestListener.class)
-public class Customer_TC_0349_VerifyApplicationDisplaysOriginalServiceProvidersListIsRetrievedAndDisplaysAccordingToTheSetupDoneUnderAccountManagementModule {
+public class Customer_TC_0349_TC_0348_VerifyApplicationDisplaysOriginalServiceProvidersListIsRetrievedAndDisplaysAccordingToTheSetupDoneUnderAccountManagementModule {
 
 	// DECLARATION SECTION
-	  static String TestDataTab="Customer_TC_0349";
+	  static String TestDataTab="Customer_TC_0349_TC_0348";
 
 	  private webDriverEventListener eventListener;
 	  private WebDriver driver;
@@ -56,7 +56,7 @@ public class Customer_TC_0349_VerifyApplicationDisplaysOriginalServiceProvidersL
 
 		// FACTORY - DATA PROVIDER
 	    @Factory (dataProvider="TestDataProvider")
-	    public Customer_TC_0349_VerifyApplicationDisplaysOriginalServiceProvidersListIsRetrievedAndDisplaysAccordingToTheSetupDoneUnderAccountManagementModule(Map<Object, Object> testdatamap){
+	    public Customer_TC_0349_TC_0348_VerifyApplicationDisplaysOriginalServiceProvidersListIsRetrievedAndDisplaysAccordingToTheSetupDoneUnderAccountManagementModule(Map<Object, Object> testdatamap){
 	    	this.testdatamap=testdatamap;
 	        this.TestScriptID=testdatamap.get("TestScriptID").toString();
 	        this.sBrowserTestData=testdatamap.get("Browser").toString();

@@ -91,6 +91,7 @@ public void myTest() throws Exception {
         Pages.customerPackageManagementPage.clickOnAddPackageButton(Log);
         Pages.customerAddPackagePage.clickOnSubscribedPackageBasedOnPackageName(testdatamap,Log);
         Pages.customerAddPackagePage.clickOnRenewPackageButton(Log);
+        Pages.customerAddPackagePage.clickOnAddNewAnnualSubscriptionTierPopUpCloseBtn(Log);
         Pages.customerLoginPage.logout(Log);
 
         Log.PostTestStatus(TestScriptID);

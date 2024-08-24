@@ -94,7 +94,7 @@ public void myTest() throws Exception {
         Pages.customerAddPackagePage.clickOnSubscribedPackageBundleBasedOnPackagePrice(testdatamap,Log);
         Pages.customerAddPackagePage.clickOnRenewPackageButton(Log);
 //        Pages.customerAddPackagePage.clickOnAreYouSureYouWantToSelectThisPackagePopUpYesBtnForServiceBundle(Log);
-        Pages.customerAddPackagePage.selectCurrentDateAsActivationDateInAddNewServiceBundlePopUp(testdatamap,Log);
+        Pages.customerAddPackagePage.selectDateAsActivationDateInAddNewServiceBundlePopUp(testdatamap,Log);
         Pages.customerAddPackagePage.clickOnAddNewServiceBundlePopUpSaveBtn(Log);
         Pages.customerAddPackagePage.clickOnYesBtnInServiceBundleWillBeActivatedOnTheActivationDatePopUp(Log);
         Pages.customerPackageManagementPage.verifyUserRedirectedToPackageManagementPage();
