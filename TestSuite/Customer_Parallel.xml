@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test-class Suite" parallel="tests" thread-count="4">
+	
+<!-- Scenario 1-->
+	<test name="Test-class test 1">
+		<parameter name="test-name" value="test-method" />
+		<classes>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0349_VerifyApplicationDisplaysOriginalServiceProvidersListIsRetrievedAndDisplaysAccordingToTheSetupDoneUnderAccountManagementModule"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0350_TC_0351_VerifyApplicationDisplaysTheListOfServiceHeadsAtTheRightSideOnClickOfAnyOriginalServiceProvidersOption"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0355_TC_0357_VerifyApplicationDisplaysTheListOfServicesUnderTheSelectedServiceHeadList"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0358_VerifyApplicationAllowUserToEnterTheAPIAuthKeyAndClickOnAuthorizeButtonInSwaggerPage"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0364_VerifyWhetherTheApplicationAddToPriceConsumptionAndDedicateFromAvailableAmountEveryTimeTheUserExecuteAServiceRegardlessSuccessfullyOrFailureDependingOnTheSettingsInAdminPortal"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0515_VerifyApplicationAllowsUserToClickOnRolesAndPermissionsMenuOnClickApplicationDisplaysTheRolesAndPermissionsScreen"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0532_VerifyApplicationDisplaysUserDetailsInViewModeWhenUserClicksOnViewOptionUnderActionMenuInRolesAndPermissionsScreen"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0533_VerifyApplicationDisplaysBelowUserDetailsInEditableModeWhenUserClicksOnEditOptionUnderActionMenuInEditRolesAndPermissionsScreen"/><class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0536_VerifyOnSelectionOfEnableAllRadioButtonApplicationSelectsAllThePermissionsAndDisplaysInTheSelectionBoxInEditRolesAndPermissionScreen"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0537_VerifyApplicationAllowsUserToDeleteAnyPermissionFromTheSelectionBoxByClickingOnXDeleteIconInEditRolesAndPermissionScreen"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0538_TC_0539_VerifyApplicationSelectAndDeselectThePermissionsUnderThePermissionSelectionBoxDropDownValuesInEditRolesAndPermissionScreen"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0540_VerifyApplicationClearsAllThePermissionsWhenUserClicksOnClearIconUnderDisplayedAllPermissionSelectionBoxInEditRolesAndPermissionScreen"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0541_VerifyOnClickOfSaveButtonApplicationValidatesAllTheDataUnderEditRoleScreenAndIfThereIsAnyErrorThenApplicationDisplaysAnErrorMessage"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0542_VerifyApplicationNavigateTheUserBackToRoleAndPermissionsPageWhenTheUserClickOnCancelButtonInEditRolesAndPermissionScreen"/>
+	<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0543_TC_0544_VerifyApplicationDisplayAConfirmationMessageWhenTheUserDeleteTheRecordInRolesAndPermissionScreen"/>
+		</classes>
+	</test>
+	
+<!-- Scenario 2-->
+	<test name="Test-class test 2">
+		<parameter name="test-name" value="test-method" />
+		<classes>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0545_VerifyApplicationDoesNotAllowToDeleteRoleIfTheSelectedRoleIsAttachedToAUserInRolesAndPermissionScreen"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0546_VerifyApplicationNavigateTheUserBackToRoleAndPermissionsPageWhenTheUserClickOnCancelButtonInAddRolesAndPermissionScreen"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0547_VerifyApplicationDisplayErrorMessagesWhenClickOnSaveButtonWhileSomeFieldsAreEmptyOrIncorrectInAddRolesAndPermissionScreen"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0548_VerifyApplicationNavigateTheUserBackToRoleAndPermissionsPageWhenTheUserClickOnSaveButtonAndANewRecordWillBeAddedInRolesAndPermissionScreen"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0552_VerifyApplicationDisplaysBelowDetailsInNonEditableModeUnderProfileTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0553_VerifyApplicationAllowsUserToClickOnAPIKeyTabInProfileScreen"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0555_VerifyApplicationAllowsUserToCopyAPIkeyByClickingOnCopyIconUnderApiKeyTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0556_VerifyApplicationDisplaysTheRegenerateAPIkeyButtonUnderAPIkeyTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0557_VerifyApplicationAllowsUserToClickOnRegenerateAPIKeyButtonUnderApiKeyTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0558_VerifyClickingOnNoOptionApplicationCloseThePopupAndRedirectsOnAPIKeyTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0559_VerifyClickingOnYesOptionApplicationCloseThePopupAndGeneratesNewAPIKey"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0560_VerifyApplicationAllowsUserToClickOnConnectivityTabInProfileScreen"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0564_TC_0567_VerifyApplicationAllowsUserToEnableTheUseMyCredentialsToggleAndEnterTheAPIkeyAndSaveInConnectivityTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0566_VerifyApplicationAllowsUserToViewTheConnectivityTypeByClickingOnViewIconInConnectivityTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0568_VerifyApplicationAllowsUserToClickOnUseMyCredentialsToggleToEnableDisableTheOptionInConnectivityTab"/>
+
+		</classes>
+	</test>
+
+	<!-- Scenario 3-->
+	<test name="Test-class test 3">
+		<parameter name="test-name" value="test-method" />
+		<classes>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0571_VerifyApplicationDisplaysTheToggleOptionAsUseMyCredentialsInDisabledModeAtTheRightPaneOnClickOfServiceProviderInConnectivityTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0572_VerifyApplicationAllowsUserToEnableTheUseMyCredentialsToggleAndEnterTheAPIKeyAndSaveAtTheServiceHeadLevel"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0573_VerifyApplicationDoNotRetrieveTheServiceProviderWhenClientCredentialToggleInAdminPortalIsDisabled"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0574_VerifyApplicationDoNotConsumePriceFromServiceBundlesWhenUseMyCredentialToggleIsEnabledInConnectivityTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0575_VerifyApplicationConsumeTransactionFromAnnualTierWhenUseMyCredentialIsEnabledInConnectivityTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0576_VerifyApplicationConsumeTransactionFromAnnualTierAndPriceFromServiceBundleWhenUseMyCredentialIsDisabledInConnectivityTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0578_VerifyServicesResponseUnderTCCMobileNumberVerificationInSDAIAOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0579_VerifyServicesResponseUnderTCCAddressByIDInSDAIAOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0580_VerifyServicesResponseUnderTCCFingerPrintVerificationInSDAIAOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0581_VerifyServicesResponseUnderTCCNafathInSDAIAOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0582_VerifyServicesResponseUnderRealEstatesDeedsInMinistryOfJusticeOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0583_VerifyServicesResponseUnderPowerOfAttorneyLookUpInMinistryOfJusticeOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0584_VerifyServicesResponseUnderPowerOfAttorneyInfoInMinistryOfJusticeOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0585_VerifyServicesResponseUnderCommercialRegistrationTreeInMinistryOfCommerceOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0586_VerifyServicesResponseUnderCommercialRegistrationStatusInMinistryOfCommerceOriginalServiceProviderInServicesTab"/>
+
+		</classes>
+	</test>
+
+	<!-- Scenario 4-->
+	<test name="Test-class test 4">
+		<parameter name="test-name" value="test-method" />
+		<classes>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0587_VerifyServicesResponseUnderCommercialRegistrationRelatedInMinistryOfCommerceOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0588_VerifyServicesResponseUnderCommercialRegistrationOwnsInMinistryOfCommerceOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0589_VerifyServicesResponseUnderCommercialRegistrationOwnsByCountryCodeInMinistryOfCommerceOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0590_VerifyServicesResponseUnderCommercialRegistrationOwnersInMinistryOfCommerceOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0591_VerifyServicesResponseUnderCommercialRegistrationManagersInMinistryOfCommerceOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0592_VerifyServicesResponseUnderCommercialRegistrationInfoInMinistryOfCommerceOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0593_VerifyServicesResponseUnderCommercialRegistrationFullInfoInMinistryOfCommerceOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0594_VerifyServicesResponseUnderCommercialRegistrationAddressInMinistryOfCommerceOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0595_VerifyServicesResponseUnderArticleOfAssociationCompanyContractsManagerInMinistryOfCommerceOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0596_VerifyServicesResponseUnderArticleOfAssociationCompanyContractsManagementInMinistryOfCommerceOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0597_VerifyServicesResponseUnderArticleOfAssociationCompanyContractsLookupInMinistryOfCommerceOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0598_VerifyServicesResponseUnderArticleOfAssociationCompanyContractsInfoInMinistryOfCommerceOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0600_VerifyServicesResponseUnderNationalAddressInfoInSPLOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0601_VerifyServicesResponseUnderYakeenSaudiByNinInElmOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0602_VerifyServicesResponseUnderYakeenNonSaudiByVisaInElmOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0603_VerifyServicesResponseUnderYakeenNonSaudiByIqamaInElmOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0604_VerifyServicesResponseUnderYakeenAddressInfoSaudiByNinInElmOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0605_VerifyServicesResponseUnderEmitadEmployeeSalaryCertificatePayslipInNCGROriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0606_VerifyServicesResponseUnderEmitadContractsForBanksInNCGROriginalServiceProviderInServicesTab"/>
+
+		</classes>
+	</test>
+
+	<!-- Scenario 5-->
+	<test name="Test-class test 5">
+		<parameter name="test-name" value="test-method" />
+		<classes>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0607_VerifyServicesResponseUnderMofeedEmploymentStatusInGOSIOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0608_VerifyServicesResponseUnderMofeedEmployeeStatisticsInGOSIOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0609_VerifyServicesResponseUnderAkeedEmploymentRelationshipValidationInGOSIOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0610_VerifyServicesResponseUnderUNIFONICMessageInCSTOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0611_VerifyServicesResponseUnderMsegatSendSmsInCSTOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0612_VerifyServicesResponseUnderSadadSingleInvoiceInSaudiPaymentOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0613_VerifyServicesResponseUnderSadadPaymentNotificationInSaudiPaymentOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0614_VerifyServicesResponseUnderSadadBillConfirmationInSaudiPaymentOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0615_VerifyServicesResponseUnderIbanVerificationInLeanOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0616_VerifyServicesResponseUnderConsumerInquiryInSimahOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0617_VerifyServicesResponseUnderDeewanSendSmsInCSTOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0618_VerifyServicesResponseUnderContractsUpdateStatusInDigitalSignatureOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0619_VerifyServicesResponseUnderContractsUploadContractInDigitalSignatureOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0620_VerifyServicesResponseUnderContractsUploadContractWithSanadInDigitalSignatureOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0621_VerifyServicesResponseUnderContractsGetContractNumberInDigitalSignatureOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0622_VerifyServicesResponseUnderContractsDownloadUnsignedContractInDigitalSignatureOriginalServiceProviderInServicesTab"/>
+
+		</classes>
+	</test>
+
+	<!-- Scenario 6-->
+	<test name="Test-class test 6">
+		<parameter name="test-name" value="test-method" />
+		<classes>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0623_VerifyServicesResponseUnderContractsDownloadSignedContractInDigitalSignatureOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0624_VerifyServicesResponseUnderContractsDownloadSanadInDigitalSignatureOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0625_VerifyServicesResponseUnderYakeenAddressInfoNonSaudiByIqamaInElmOriginalServiceProviderInServicesTab"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.Customer_TC_0626_VerifyServicesResponseUnderEmitadDetailedSalaryCertificatesInNCGROriginalServiceProviderInServicesTab"/>
+
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0362_VerifyUserShouldBeAbleToClickOnPackageManagementOptionAndApplicationOpensPackageManagementAtTheRightSideOfTheScreen"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0366_VerifyWhetherApplicationClearsTheInputFromTheSearchPackageNameSearchTextBoxWhenUserClicksOnXClearButton"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0367_VerifyWhetherApplicationFiltersThePackageDataBasedOnTheSearchInputEnteredInSearchPackageNameAndDisplaysTheResults"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0368_VerifyWhetherApplicationDisplaysMessageAsNoRowsWhenSystemDoesNotFindAnyDataSuitableToTheEnteredKeywordInSearchPackageNameSearchOption"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0370_VerifyWhetherApplicationFiltersThePackageDataBasedOnTheSearchOptionSelectionInSelectPackageStatusFilterAndDisplaysTheResults"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0371_VerifyWhetherApplicationDisplaysMessageAsNoRowsWhenSystemDoesNotFindAnyDataSuitableForTheSelectedOptionInSelectPackageStatusSearchOption"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0388_TC_0389_VerifyWhetherUAPICustomerPortalOpensAPopupAndDisplaysThePackageDetailsViewModeWhenUserClicksOnViewOptionUnderActionMenu"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0391_VerifyWhetherOnClickOnAddPackageButtonUAPICustomerPortalOpensAddPackageScreenAndDisplaysBelowTabsForUserToSelectAnnualSubscriptionTierServiceBundles"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0394_VerifyWhetherOnAddPackageScreenAnnualSubscriptionTierTabIsDefaultSelectedVerifyWhetherOnAddPackageScreenAnnualSubscriptionTierTabIsDefaultSelected"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0395_VerifyWhetherApplicationDisplaysTheSubscribedPackageDetailsUnderAnnualSubscriptionTierTabOnlyWhenTheUserHasAlreadySubscribedThePackageAndThePackageIsInActiveStatus"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0396_VerifyWhetherOnClickOnAlreadySubscribedPackageDetailsApplicationEnabledTheRenewPackageButton"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0397_VerifyWhetherApplicationShouldAllowUserToClickOnRenewPackageButton"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0398_VerifyWhetherOnClickOnYesButtonApplicationOpensAddNewAnnualSubscriptionTierPopupWithSaveAndCancelOptionAndDisplaysBelowDetailsAndAllowUserToSelectDateOfActivation"/>
+
+		</classes>
+	</test>
+
+	<!-- Scenario 7-->
+	<test name="Test-class test 7">
+		<parameter name="test-name" value="test-method" />
+		<classes>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0400_VerifyWhetherApplicationCloseThePopupWhenUserClicksOnCancelButton"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0401_VerifyWhetherApplicationDisplaysAnErrorMessageWhenUserClickOnSaveButtonWithoutSelectingActivationDate"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0402_VerifyWhetherApplicationDisplaysBelowConfirmationPopupMessageWithYesAndNoOptionTheAnnualPackageWillBeActivatedOnTheActivationDateTheInvoiceWillBeGeneratedDoYouWantToProceed"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0403_VerifyWhetherApplicationClosesThePopupMessageWhenUserClicksOnNoOption"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0404_VerifyWhetherApplicationSavesTheRecordAndRedirectsOnThePackageManagementScreen"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0405_VerifyWhetherApplicationDisplaysTheListOfPackagesOnTheAddPackageScreenWhichPackagesAreAvailableToAdd"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0406_VerifyWhetherOnClickOnAvailablePackageDetailsApplicationEnabledTheGenerateInvoiceButton"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0408_TC_409_VerifyWhetherTheApplicationDisplayTheCorrectPackageTitlePricePeriodTransactions"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0411_TC_407_VerifyWhetherApplicationCloseThePopupWhenUserClicksOnCancelButton"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0412_VerifyWhetherApplicationDisplaysAnErrorMessageWhenUserClickOnSaveButtonWithoutSelectingActivationDate"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0413_VerifyWhetherApplicationDisplaysBelowConfirmationPopupMessageWithYesAndNoOptionTheAnnualPackageWillBeActivatedOnTheActivationDateTheInvoiceWillBeGeneratedDoYouWantToProceed"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0414_VerifyWhetherApplicationClosesThePopupMessageWhenUserClicksOnNoOption"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0415_VerifyWhetherApplicationSavesTheRecordAndRedirectsOnThePackageManagementScreen"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0416_VerifyWhetherTheApplicationAddTheAnnualSubscriptionTierPackageAmountToTransactionConsumptionEveryTimeTheUserExecutedTheServiceRegardlessSuccessfullyOrFailure"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0417_VerifyWhetherTheApplicationRetrievePendingPaymentStatusWhenAddTheApplicationSubscriptionTierPackage"/>
+
+		</classes>
+	</test>
+
+	<!-- Scenario 8-->
+	<test name="Test-class test 8">
+		<parameter name="test-name" value="test-method" />
+		<classes>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0418_VerifyWhetherTheApplicationRetrieveActiveStatusWhenTheUserAddTheAnnualSubscriptionTierPackageAndPaidTheInvoiceIfThereIsNoOtherActivePackagesForAnnualAndBundles"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0419_VerifyWhetherTheApplicationRetrieveExpiredStatusWhenTheAnnualSubscriptionTierPackagePeriodIsPassed"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0422_VerifyWhetherApplicationDisplaysTheSubscribedPackageDetailsUnderServicesBundlesTabOnlyWhenTheUserHasAlreadySubscribedThePackageAndThePackageIsInActiveStatus"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0423_VerifyWhetherOnClickOnAlreadySubscribedPrepaidBundleDetailsApplicationEnabledTheRenewPackageButton"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0424_VerifyWhetherApplicationShouldAllowUserToClickOnRenewPackageButton"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0425_VerifyWhetherOnClickOnYesButtonApplicationOpensAddNewServicesBundlePopupWithSaveAndCancelOptionAndDisplaysBelowDetailsAndAllowUserToSelectDateOfActivation"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0427_VerifyWhetherApplicationCloseThePopupWhenUserClicksOnCancelButton"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0428_VerifyWhetherApplicationDisplaysAnErrorMessageWhenUserClickOnSaveButtonWithoutSelectingActivationDate"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0429_VerifyWhetherApplicationDisplaysBelowConfirmationPopupMessageWithYesAndNoOptionTheServiceBundleWillBeActivatedOnTheActivationDateTheInvoiceWillBeGeneratedDoYouWantToProceed"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0430_VerifyWhetherApplicationClosesThePopupMessageWhenUserClicksOnNoOption"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0431_VerifyWhetherOnClickOnSaveButtonApplicationSavesTheRecordAndRedirectsOnThePackageManagementScreen"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0432_VerifyWhetherTheApplicationDoNotRetrieveActiveAnnualPackagesInAvailablePrepaidBundlesSectionIfThereIsNoActiveServiceBundlePackageAddInAtAccount"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0435_VerifyWhetherApplicationDisplaysTheListOfPackagesOnTheAddPackageScreenWhichPackagesAreAvailableToAdd"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0436_VerifyWhetherOnClickOnAvailablePackageDetailsApplicationEnabledTheGenerateInvoiceButton"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0437_TC_0438_VerifyWhetherApplicationShouldAllowUserToClickOnGenerateInvoiceButton"/>
+
+		</classes>
+	</test>
+
+	<!-- Scenario 9-->
+	<test name="Test-class test 9">
+		<parameter name="test-name" value="test-method" />
+		<classes>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0439_VerifyWhetherTheApplicationDisplayTheCorrectPackagePricePeriodForTheSelectedServiceBundle"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0441_VerifyWhetherApplicationCloseThePopupWhenUserClicksOnCancelButton"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0442_VerifyWhetherApplicationDisplaysAnErrorMessageWhenUserClickOnSaveButtonWithoutSelectingActivationDate"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0443_VerifyWhetherApplicationDisplaysBelowConfirmationPopupMessageWithYesAndNoOptionTheServiceBundleWillBeActivatedOnTheActivationDateTheInvoiceWillBeGeneratedDoYouWantToProceed"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0444_VerifyWhetherApplicationClosesThePopupMessageWhenUserClicksOnNoOption"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0445_VerifyWhetherOnClickOfSaveButtonApplicationSavesTheRecordAndRedirectsOnThePackageManagementScreen"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0446_VerifyWhetherTheApplicationAddTheServiceBundlePackageToTransactionConsumptionEveryTimeTheUserExecutedTheServiceRegardlessSuccessfullyOrFailure"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0447_VerifyWhetherTheApplicationRetrievePendingPaymentStatusWhenAddTheServiceBundlePackage"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0448_TC_0449_VerifyWhetherTheApplicationRetrieveActiveStatusWhenTheUserAddTheServiceBundlePackageAndPaidTheInvoiceIfThereIsNoOtherActivePackagesForAnnualAndBundles"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0451_VerifyApplicationAllowsUserToClickOnMyInvoicesOptionAndApplicationRedirectsToMyInvoicesScreen"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0453_VerifyWhetherTheApplicationAddNewInvoiceForEachAddedPackage"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0454_VerifyWhetherTheApplicationChangeTheInvoiceStatusToPaidWhenTheUserPaidForTheInvoiceUsingEdaat"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0457_VerifyWhetherUAPICustomerPortalClearsTheInputFromTheSearchAccountNameSearchTextBoxWhenUserClicksOnXClearButton"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0458_VerifyWhetherUAPICustomerPortalFiltersTheInvoiceDataBasedOnTheSearchInputEnteredInSearchPackageNameAndDisplaysTheResults"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0459_VerifyWhetherUAPICustomerPortalDisplaysMessageAsNoRowsWhenSystemDoesNotFindAnyDataSuitableToTheEnteredKeywordInSearchPackageNameSearchOption"/>
+
+		</classes>
+	</test>
+
+	<!-- Scenario 10-->
+	<test name="Test-class test 10">
+		<parameter name="test-name" value="test-method" />
+		<classes>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0461_VerifyWhetherUAPICustomerPortalFiltersTheInvoiceDataBasedOnTheSearchOptionSelectionInSelectInvoiceStatusFilterAndDisplaysTheResults"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0462_VerifyWhetherUAPICustomerPortalDisplaysMessageAsNoRowsWhenSystemDoesNotFindAnyDataSuitableForTheSelectedOptionInSelectInvoiceStatusSearchOption"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0464_VerifyWhetherUAPICustomerPortalFiltersTheInvoiceDataBasedOnTheSearchOptionSelectionInSelectInvoiceTypeFilterAndDisplaysTheResults"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0465_VerifyWhetherUAPICustomerPortalDisplaysMessageAsNoRowsWhenSystemDoesNotFindAnyDataSuitableForTheSelectedOptionInSelectInvoiceTypeSearchOption"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0481_VerifyWhetherUAPICustomerPortalAllowsUserToDownloadInvoiceReportInPdfFormatOnClickOfExportPDFButton"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0482_VerifyWhetherUAPICustomerPortalAllowsUserToDownloadInvoiceReportInExcelFormatOnClickOfExportExcelButton"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0483_VerifyWhetherApplicationAllowsUserToClickOnUserManagementMenuAndOnClickApplicationDisplaysTheUserManagementScreenAtTheRightPane"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0486_VerifyWhetherApplicationClearsTheInputFromTheSearchTextBoxWhenUserClicksOnXClearButton"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0487_VerifyWhetherApplicationFiltersTheUserDataBasedOnTheSearchInputEnteredInSearchWithFirstNameLastNameAndEmailIDAndDisplaysTheResults"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0488_VerifyWhetherApplicationDisplaysMessageAsNoRowsWhenSystemDoesNotFindAnyDataSuitableToTheEnteredKeywordInSearchWithFirstNameLastNameAndEmailIDSearchOption"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0504_VerifyWhetherApplicationDisplaysBelowUserDetailsInViewModeWhenUserClicksOnViewOptionUnderActionMenuIDFirstNameLastNameNationalIDEmailUserNameMobileNumberRoleStatus"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0505_VerifyWhetherApplicationDisplaysBelowUserDetailsInEditableModeWhenUserClicksOnEditOptionUnderActionMenuFirstNameLastNameNationalIDMobileNumberRoleStatus"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0507_VerifyWhetherOnClickOfSaveButtonApplicationValidatesAllTheDataUnderEditUserScreenAndIfThereIsAnyErrorThenApplicationShouldDisplaysAnErrorMessage"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0508_VerifyWhetherApplicationAllowsUserToClickOnCancelButtonUnderEditAccountScreenOnClickApplicationDiscardTheChangesAndCloseTheEditAccountScreenAndRedirectsToUserManagementPage"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0511_VerifyWhetherApplicationDoesNotAllowToDeleteUserIfTheSelectedUserIsTheOnlyUserForTheAccount"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0512_VerifyWhetherTheApplicationNavigateTheUserBackToUserManagementPageWhenTheUserClickOnCancelButton"/>
+			<class name="com.azmqalabs.uapitestautomation.admin.testscripts.CustPortal_TC_0513_VerifyWhetherTheApplicationDisplayErrorMessageWhenTheUserClickOnSaveButtonWhenThereIsSomeEmptyFieldsOrIncorrectInsertedData"/>
+		</classes>
+	</test>
+</suite>
