@@ -29,9 +29,16 @@ public class Pages {
     public ServiceManagementHeadsListPage serviceManagementHeadsListPage;
     public EditServiceManagementHeadsListPage editServiceManagementHeadsListPage;
     public ServiceManagementServicesListPage serviceManagementServicesListPage;
-
     public CustomerLoginPage customerLoginPage;
     public ReportsConsumptionDetailsPage reportsConsumptionDetailsPage;
+    public CustomerAddPackagePage customerAddPackagePage;
+    public CustomerEditRolesAndPermissionsPage customerEditRolesAndPermissionsPage;
+    public CustomerPackageManagementPage customerPackageManagementPage;
+    public CustomerRolesAndPermissionsPage customerRolesAndPermissionsPage;
+    public CustomerServicesPage customerServicesPage;
+    public CustomerUserManagementPage customerUserManagementPage;
+    public CustomerMyInvoicesPage customerMyInvoicesPage;
+    public CustomerEditUserPage customerEditUserPage;
 
     public DBConnect DBConnect;
     public InvokeApplicationPage InvokeApplicationPage;
@@ -60,6 +67,14 @@ public class Pages {
         editServiceProviderListPage = new EditServiceManagementProviderListPage(driver, test);
         serviceManagementServicesListPage = new ServiceManagementServicesListPage(driver, test);
         customerProfilePage = new CustomerProfilePage(driver, test);
+        customerAddPackagePage = new CustomerAddPackagePage(driver, test);
+        customerEditRolesAndPermissionsPage = new CustomerEditRolesAndPermissionsPage(driver, test);
+        customerPackageManagementPage = new CustomerPackageManagementPage(driver, test);
+        customerRolesAndPermissionsPage = new CustomerRolesAndPermissionsPage(driver, test);
+        customerServicesPage = new CustomerServicesPage(driver, test);
+        customerUserManagementPage = new CustomerUserManagementPage(driver, test);
+        customerMyInvoicesPage = new CustomerMyInvoicesPage(driver, test);
+        customerEditUserPage = new CustomerEditUserPage(driver, test);
 
     }
 }

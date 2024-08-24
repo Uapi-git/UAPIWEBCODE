@@ -125,4 +125,23 @@ public class EditUserPage extends BasePage {
             takeScreenShot();
         }
     }
+
+    /**
+     * Method to verify company field is inactive to select
+     * @param log <Log> - Log
+     */
+    public void verifyCompanyFieldIsInactiveToSelect(Log log){
+        try {
+            mouseOver(driver,getElement(UapiOR.Admin_AddOrEditUserPage_CompanyTextField));
+            boolean isCompanyDropdownEnabled = driver.findElement(By.xpath(UapiOR.Admin_AddOrEditUserPage_CompanyTextField + "/parent::div")).getAttribute("class").contains("Mui-disabled");
+            Assert.assertTrue(isCompanyDropdownEnabled, "Status dropdown is enabled");
+            test.log(Status.PASS, "#FUNC - Verify Company field is inactive to select  * Verify Company field is inactive to select is Pass *");
+            log.ReportEvent("PASS", "Verify Company field is inactive to select is successful");
+            takeScreenShot();
+        } catch (Exception e) {
+            test.log(Status.FAIL, "Verify Company field is inactive to select is fail *");
+            log.ReportEvent("FAIL", "Verify Company field is inactive to select failed: " + e.getMessage());
+            takeScreenShot();
+        }
+    }
 }
