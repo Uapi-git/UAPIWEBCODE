@@ -94,7 +94,7 @@ public class Admin_TC_03_TC_05_VerifyAdminApplicationDisplaysTheAccountDataBased
 				Log.ReportEvent("PASS", className + " - Execution Started");
 
 				Pages.InvokeApplicationPage.launchApplication();
-	           	Pages.adminLoginPage.loginToApplication(Log);
+	           	Pages.adminLoginPage.logout(Log);
 				Pages.accountManagementPage.searchCompanyName(testdatamap);
 				Pages.accountManagementPage.verifySearchFunctionality(testdatamap,Log);
 	           	Pages.adminLoginPage.logout(Log);
